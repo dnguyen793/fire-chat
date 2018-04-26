@@ -11,6 +11,7 @@ import think from './middleware/think';
 
 const store = createStore(rootReducer, {}, applyMiddleware(think));
 
+
 ReactDOM.render(
     <Provider store={store}>
         <Router>
